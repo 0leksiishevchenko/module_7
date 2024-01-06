@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 setup(
     name='clean_folder',
@@ -7,10 +7,10 @@ setup(
     url='https://github.com/0leksiishevchenko/sorter',
     author='Oleksii Shevchenko',
     license='MIT',
-    packages=['clean_folder'],
+    packages=find_namespace_packages(),
     entry_points={
         'console_scripts': [
-            'clean_folder = clean_folder.clean:main',
+            'clean-folder = clean_folder.clean:main',
         ],
     },
 )
